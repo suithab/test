@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>767</width>
+    <height>407</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 247, 250);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>20</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;方正粗黑宋简体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>房贷计算器</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>80</y>
+      <width>241</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;黑体&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>130</y>
+      <width>319</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>301</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="danjia">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>房屋单价：元/平方米</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="danjia1">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;黑体&quot;;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="mianji">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>房屋面积：平方米</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="mianji1">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;黑体&quot;;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="cheng">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>按揭成数：成</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="cheng1">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;黑体&quot;;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="nian">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>按揭年数：年</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="nian1">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;黑体&quot;;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="lilv">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>贷款利率：%</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>还款方式:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QRadioButton" name="benxi">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>等额本息</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QRadioButton" name="benjin">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>等额本金</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QPushButton" name="start1">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 152, 174);
+font: 9pt &quot;幼圆&quot;;</string>
+         </property>
+         <property name="text">
+          <string>开始计算</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="lilv1">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;黑体&quot;;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>301</width>
+        <height>340</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_2">
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>贷款总额：万</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="zonge">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;黑体&quot;;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="nian_2">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>按揭年数：年</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="nian2">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;黑体&quot;;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="lilv_2">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>贷款利率：%</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>还款方式:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QRadioButton" name="benxi2">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>等额本息</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="1">
+        <widget class="QRadioButton" name="benjin2">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>等额本金</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLineEdit" name="lilv2">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;黑体&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="1">
+        <widget class="QPushButton" name="start2">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;幼圆&quot;;
+background-color: rgb(255, 152, 174);</string>
+         </property>
+         <property name="text">
+          <string>开始计算</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QWidget" name="widget_4" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>305</width>
+        <height>207</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_4">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>商贷总额：  万</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="fangz">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;黑体&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>商贷利率：  %</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lilvs">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;黑体&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>公积金总额：万</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="fangg">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;黑体&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>公积金利率：%</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="lilvg">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;黑体&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>按揭年数：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="nian3">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;黑体&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_13">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>还款方式：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QRadioButton" name="benxi3">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>等额本息</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QRadioButton" name="benjin3">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>等额本金</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="start3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>207</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 152, 174);
+font: 9pt &quot;幼圆&quot;;</string>
+      </property>
+      <property name="text">
+       <string>开始计算</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>70</y>
+      <width>301</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout_3">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>贷款类别：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="fang1">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>计算方式：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="ji1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;方正粗黑宋简体&quot;;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>401</x>
+      <y>70</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 11pt &quot;方正粗黑宋简体&quot;;
+color: rgb(255, 28, 88);</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="text">
+     <string>计算结果：</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clear">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>200</y>
+      <width>131</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(229, 227, 219);
+font: 9pt &quot;幼圆&quot;;</string>
+    </property>
+    <property name="text">
+     <string>清空重填</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
